@@ -63,6 +63,7 @@ a{
     justify-content: center;
     gap: 50px;
     margin-top: 30px;
+    font-size: 20px;
 }
 
 .content_about_contacts h2{
