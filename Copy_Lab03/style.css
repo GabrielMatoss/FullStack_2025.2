@@ -3,8 +3,11 @@ body{
     font-size: 15pt;
     text-align: center;
     margin: 6px;
-    padding: 0;
     background-color: lightgray;
+}
+
+h1, h2{
+    font-family: 'Georgia', 'Times New Roman', serif;
 }
 
 #container_title_logo{
@@ -21,6 +24,7 @@ body{
         display: inline;
         position: relative;
         bottom: 85px;
+        color: darkgreen;
     }
     img{
         width: 200px;
@@ -40,6 +44,7 @@ body{
 .container_links{
     position: relative;
     bottom: 40px;
+
     a{
         text-decoration: none;
         margin: 0 50px; 
@@ -52,9 +57,11 @@ body{
 .container_intro{
     position: relative;
     bottom: 20px;
+
     h2{
         margin-bottom: 30px;
     }
+
     p{
         font-size: 20pt;
         color: indigo;
@@ -83,8 +90,69 @@ body{
 }
 
 .container_contacts{
+    margin: 70px auto 70px auto;
+    width: 100%;
     table{
-        margin: auto;
-        
+        margin: 28px auto 0 auto;
+        border: 4px dashed red;
+    }
+
+    th{
+        color: red;
+    }
+
+    th, td{
+        border: 2px solid red;
+        padding: 10px 20px;
+    }
+}
+
+#links_utils{
+    width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: yellow;
+    ul{
+        position: relative;
+        left: 10px;
+        padding-bottom: 10px;
+    }
+    p{
+        margin-bottom: 30px;
+    }
+
+    a{
+        position: relative;
+        left: 110px;
+        text-decoration: none;
+        font-weight: bold;
+        color: darkred;
+    }
+}
+
+#container_footer{
+    margin-top: 40px;
+    background-color: bisque;
+    padding-top: 10px;
+    p{
+        display: inline;
+        position: relative;
+        bottom: 85px;
+        font-size: 15pt;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        right: 285px;
+    }
+
+    #logo_css{
+        width: 150px;
+        height: 200px;
+        position: relative;
+        left: 260px;
     }
 }
