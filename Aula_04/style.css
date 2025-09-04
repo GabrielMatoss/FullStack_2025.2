@@ -1,0 +1,39 @@
+#container_divs{
+    background-color: chocolate;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   // aling-content: center;
+}
+
+.item{
+    background-color: darkred;
+    padding: 10px;
+    margin: 10px;
+}
+
+#d5{
+    order: 1;
+}
+
+#d4{
+    flex-grow: 3;
+}
+
+#d8{
+    flex-basis: 100px;
+}
+
+#d12{
+    aling-self: flex-start;
+}
+
+#d14{
+    aling-self: flex-end;
+}
+
+#d16{
+    order: -1;
+}
