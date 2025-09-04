@@ -1,0 +1,90 @@
+body{
+    //font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 15pt;
+    text-align: center;
+    margin: 6px;
+    padding: 0;
+    background-color: lightgray;
+}
+
+#container_title_logo{
+    background-color: lightskyblue;
+    height: 275px;
+    //padding-bottom: 58px;
+}
+
+#title_logo{
+    text-align: center;
+    background-color: bisque;
+    border: 4px solid darkblue;
+    h1{
+        display: inline;
+        position: relative;
+        bottom: 85px;
+    }
+    img{
+        width: 200px;
+    }
+
+    .imgCplus{
+        position: relative;
+        right: 350px;
+    }
+
+    .imgJava{
+        position: relative;
+        left: 350px;
+    }
+}
+
+.container_links{
+    position: relative;
+    bottom: 40px;
+    a{
+        text-decoration: none;
+        margin: 0 50px; 
+        text-transform: uppercase;
+        color: darkred;
+        font-weight: bold;
+    }
+}
+
+.container_intro{
+    position: relative;
+    bottom: 20px;
+    h2{
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 20pt;
+        color: indigo;
+        font-family: "Sans-serif";
+    }
+}
+
+.container_books{
+    img{
+        width: 250px;
+        height: 350px;
+        margin: 0 50px;
+        padding-top: 30px;
+    }
+}
+
+.container_iframes{
+    margin-top: 60px;
+
+    iframe{
+        padding-top: 15px;
+        width: 350px;
+        height: 300px;
+        margin: 0 35px;
+    }
+}
+
+.container_contacts{
+    table{
+        margin: auto;
+        
+    }
+}
