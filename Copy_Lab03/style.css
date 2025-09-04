@@ -32,12 +32,12 @@ h1, h2{
 
     .imgCplus{
         position: relative;
-        right: 350px;
+        right: 32%;
     }
 
     .imgJava{
         position: relative;
-        left: 350px;
+        left: 32%;
     }
 }
 
@@ -71,8 +71,8 @@ h1, h2{
 
 .container_books{
     img{
-        width: 250px;
-        height: 350px;
+        width: 350px;
+        height: 390px;
         margin: 0 50px;
         padding-top: 30px;
     }
@@ -90,7 +90,7 @@ h1, h2{
 }
 
 .container_contacts{
-    margin: 70px auto 70px auto;
+    margin: 80px auto 60px auto;
     width: 100%;
     table{
         margin: 28px auto 0 auto;
@@ -146,13 +146,13 @@ h1, h2{
         width: 200px;
         height: 200px;
         position: relative;
-        right: 285px;
+        right: 29.8%;
     }
 
     #logo_css{
         width: 150px;
         height: 200px;
         position: relative;
-        left: 260px;
+        left: 28%;
     }
 }
