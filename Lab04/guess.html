@@ -7,17 +7,19 @@
     <title>Guess</title>
 </head>
 <body>
-    <input type="number" id="input_number">
-    <input type="button" value="Clique aqui" onclick="Guess()">
+    <div class="container">
+        <input type="number" id="input_number">
+        <input id="input_btn" type="button" value="Clique aqui" onclick="Guess()">
 
-    <p>Tentativas pequenas:</p>
-    <p id="tentativas_p" class="tentativas">
-    </p>
+        <div id="sucesso"></div>
 
-    <p>Tentativas grandes:</p>
-    <p id="tentativas_g" class="tentativas">
-    </p>
-    <p id="acerto"></p>
+        <p>Tentativas pequenas:</p>
+        <div id="tentativas_p" class="tentativas"></div>
+
+        <p>Tentativas grandes:</p>
+        <div id="tentativas_g" class="tentativas"></div>
+    </div>
+   
     <script src="./script.js" type="text/javascript"></script>
 </body>
 </html>

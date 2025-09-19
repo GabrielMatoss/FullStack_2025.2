@@ -1,15 +1,23 @@
-let input = parseInt(document.getElementById("input_number").value);
-console.log(input);
-let r = Math.random() * 100;
-let f = Math.floor(r);
+let random_value = Math.random() * 100;
+let value_guess = Math.floor(random_value);
+
 function Guess(){
-    console.log(f);
-    if(input < f){
-        return document.getElementById("tentativas_g").innerHTML = input.toString();
-    } else if( input > f){
-       return document.getElementById("tentativas_p").innerHTML = input.toString();
+    let input_user = parseInt(document.getElementById("input_number").value);
+    console.log(`Valor input:${input_user}`);
+    console.log(`Adivinhação: ${value_guess}`);
+    
+    if(input_user > value_guess){
+        document.getElementById("tentativas_g").style.setProperty("background-color", "rgba(255, 48, 48, 1)");
+        return document.getElementById("tentativas_g").innerHTML += `${input_user} `; 
+    }
+    else if(input_user < value_guess)
+    {
+        document.getElementById("tentativas_p").style.setProperty("background-color", "rgba(255, 48, 48, 1)");
+        return document.getElementById("tentativas_p").innerHTML += `${input_user} `; 
     }
     else{
-       return  document.getElementById("acerto").innerHTML = "Acertou!!!!";
-    }    
+        document.getElementById("sucesso").style.setProperty("background-color", "green");
+        return document.getElementById("sucesso").innerHTML = "Acertou!!!";
+    }
 }
+
