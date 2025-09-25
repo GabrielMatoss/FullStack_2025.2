@@ -6,13 +6,12 @@ let ctx2 = canvas2.getContext("2d");
 
 
 let canvas3 = document.getElementById("canvas3");
-let ctx3 = canvas2.getContext("2d");
+let ctx3 = canvas3.getContext("2d");
 
 ctx3.beginPath();
 ctx3.lineWidth = 2;
 ctx3.fillStyle = 'red';
-ctx3.fillRect(900, 350,50,50);
-ctx3.stroke();
+ctx3.fillRect(0,0,50,50);
 ctx3.closePath();
 
 
