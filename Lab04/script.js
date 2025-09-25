@@ -3,8 +3,6 @@ let value_guess = Math.floor(random_value);
 
 function Guess(){
     let input_user = parseInt(document.getElementById("input_number").value);
-    console.log(`Valor input:${input_user}`);
-    console.log(`Adivinhação: ${value_guess}`);
     
     if(input_user > value_guess){
         document.getElementById("tentativas_g").style.setProperty("background-color", "rgba(255, 48, 48, 1)");
