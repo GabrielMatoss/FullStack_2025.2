@@ -1,5 +1,6 @@
 let random_value = Math.random() * 100;
 let value_guess = Math.floor(random_value);
+console.log("Numero secreto:", value_guess);
 
 function Guess(){
     let input_user = parseInt(document.getElementById("input_number").value);
