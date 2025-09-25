@@ -11,7 +11,8 @@ let ctx3 = canvas3.getContext("2d");
 ctx3.beginPath();
 ctx3.lineWidth = 2;
 ctx3.fillStyle = 'red';
-ctx3.fillRect(0,0,50,50);
+ctx3.fillRect(400,0,50,50);
+ctx3.closePath();
 ctx3.closePath();
 
 
