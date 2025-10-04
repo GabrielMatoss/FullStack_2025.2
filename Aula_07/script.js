@@ -1,18 +1,6 @@
-
-
 let canvas2 = document.getElementById("canvas2");
 let ctx2 = canvas2.getContext("2d");
 
-
-let canvas3 = document.getElementById("canvas3");
-let ctx3 = canvas3.getContext("2d");
-
-ctx3.beginPath();
-ctx3.lineWidth = 2;
-ctx3.fillStyle = 'red';
-ctx3.fillRect(400,0,50,50);
-ctx3.closePath();
-ctx3.closePath();
 
 // retângulos
 ctx2.beginPath();
@@ -162,7 +150,7 @@ ctx.closePath();
 
 // texto
 ctx.beginPath();
-ctx.lineWidth = 5;
+ctx.lineWidth = 5; //define a espessura das linhas
 ctx.fillStyle = 'blue';
 ctx.strokeStyle = 'red';
 ctx.font = "90px Arial"
@@ -171,3 +159,117 @@ ctx.fillText("Olá",205,350);
 ctx.strokeText("Olá",200,350)
 ctx.closePath();
 
+
+
+
+//canvas do cenário com casinha
+let canvas3 = document.getElementById("canvas3");
+let ctx3 = canvas3.getContext("2d");
+
+// chao
+ctx3.beginPath();
+ctx3.fillStyle = 'darkgray';
+ctx3.fillRect(0,290,400,400);
+ctx3.closePath();
+//a ordem de precedencia importa, dessa vez a arvore pode vir depois do chao
+//arvore1
+ctx3.beginPath();
+ctx3.fillStyle = '#6d3c03';
+ctx3.fillRect(340,285,20,55);
+ctx3.closePath();
+
+//folhas das arvores (tenho que fazer elipses)
+ctx3.beginPath();
+ctx3.lineWidth = 2;
+ctx3.fillStyle = 'green'
+ctx3.strokeStyle = 'green';
+ctx3.arc(350, 265, 30, 0, 2 * Math.PI);
+ctx3.fill();
+ctx3.stroke();
+ctx3.closePath();
+
+// Uma aparentemente cachoeira
+ctx3.beginPath();
+ctx3.fillStyle = '#5b8cd6ff'
+ctx3.arc(10, 280, 45, 0, 2 * Math.PI);
+ctx3.fill();
+ctx3.closePath();
+//parte da coluna da cachoeira
+ctx3.beginPath();
+ctx3.fillStyle = '#5b8cd6ff';
+ctx3.fillRect(0,280,55,400);
+ctx3.closePath();
+
+
+//parte do chao da cachoeira
+ctx3.beginPath();
+ctx3.fillStyle = '#5b8cd6ff';
+ctx3.fillRect(20,355,120,400);
+ctx3.closePath();
+// Uma aparentemente cachoeira
+ctx3.beginPath();
+ctx3.fillStyle = '#5b8cd6ff'
+ctx3.arc(145, 400, 45, 0, 2 * Math.PI);
+ctx3.fill();
+ctx3.closePath();
+
+//a ordem de precedencia importa, dessa vez a arvore pode vir depois do chao
+//arvore2
+ctx3.beginPath();
+ctx3.fillStyle = '#6d3c03';
+ctx3.fillRect(55,235,20,55);
+ctx3.closePath();
+
+//folhas das arvores (tenho que fazer elipses)
+ctx3.beginPath();
+ctx3.lineWidth = 2;
+ctx3.fillStyle = 'green'
+ctx3.strokeStyle = 'green';
+ctx3.arc(65, 215, 30, 0, 2 * Math.PI);
+ctx3.fill();
+ctx3.stroke();
+ctx3.closePath();
+
+//paredes da casinha
+ctx3.beginPath();
+ctx3.fillStyle = '#884b06ff';
+ctx3.fillRect(155,190,90,100);
+ctx3.fill();
+ctx3.closePath();
+
+//porta da casinha
+ctx3.beginPath();
+ctx3.fillStyle = '#472701ff';
+ctx3.fillRect(190,240,20,50);
+ctx3.fill();
+ctx3.closePath();
+
+//Janelas da casinha
+//janela1
+ctx3.beginPath();
+ctx3.fillStyle = '#25d3f1ff';
+ctx3.fillRect(165,215,25,25);
+ctx3.fill();
+ctx3.closePath();
+//janela2
+ctx3.beginPath();
+ctx3.fillStyle = '#25d3f1ff';
+ctx3.fillRect(210,215,25,25);
+ctx3.fill();
+ctx3.closePath();
+
+//Telhado
+ctx3.beginPath();                     // inicia um novo caminho (path)
+ctx3.moveTo(200, 140);                 // posiciona o "pincel" no pico (não desenha)
+ctx3.lineTo(155, 190);                // desenha linha até base esquerda
+ctx3.lineTo(245, 190);     
+ctx3.fillStyle = '#ec7e5cff';           // cor de preenchimento (vermelho telha)
+ctx3.fill();  // desenha linha até base direita
+ctx3.closePath();                     // conecta o ponto atual ao início (fecha o triângulo)
+
+//Sol
+ctx3.beginPath();
+ctx3.fillStyle = '#fbff13'
+ctx3.arc(300, 95, 47, 0, 2 * Math.PI);
+ctx3.fill();
+ctx3.closePath();
