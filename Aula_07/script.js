@@ -1,5 +1,4 @@
-let canvas = document.getElementById("canvas");
-let ctx = canvas.getContext("2d");
+
 
 let canvas2 = document.getElementById("canvas2");
 let ctx2 = canvas2.getContext("2d");
@@ -15,21 +14,37 @@ ctx3.fillRect(400,0,50,50);
 ctx3.closePath();
 ctx3.closePath();
 
-
-
 // retângulos
 ctx2.beginPath();
 ctx2.lineWidth = 2;
 ctx2.fillStyle = 'red';
 ctx2.fillRect(0,0,50,50);
 ctx2.closePath();
-//linhas vermelha
+
+// //linhas vermelha
+// ctx2.beginPath();
+// ctx2.lineWidth = 2;
+// ctx2.fillStyle = 'red'
+// ctx2.strokeStyle = 'red';
+// ctx2.moveTo(0, 0); //mova para determinada posição(sem tocar na tela) é como se fosse uma mira x e y
+// ctx2.lineTo(400, 400); // mova até a posição que definimos(tocando na tela)
+// ctx2.stroke();//stroke mostra para o usuario o que fizemos, da cor as bordas, linhas etc
+// ctx2.closePath();
+
+// retângulos
 ctx2.beginPath();
 ctx2.lineWidth = 2;
-ctx2.strokeStyle = 'red';
-ctx2.moveTo(10, 10); //mova para determinada posição(sem tocar na tela) é como se fosse uma mira
-ctx2.lineTo(400, 400); // mova até a posição que definimos(tocando na tela)
-ctx2.stroke();//stroke mostra para o usuario o que fizemos
+ctx2.fillStyle = 'yellow';
+ctx2.fillRect(0,350,50,50);
+ctx2.closePath();
+
+//linha azul
+ctx2.beginPath();
+ctx2.lineWidth = 2;
+ctx2.strokeStyle = 'blue';
+ctx2.moveTo(400,0);
+ctx2.lineTo(0,400);
+ctx2.stroke();
 ctx2.closePath();
 
 // retângulos
@@ -39,27 +54,23 @@ ctx2.fillStyle = 'blue';
 ctx2.fillRect(350,0,50,50);
 ctx2.closePath();
 
-//linhas azul
-ctx2.beginPath();
-ctx2.lineWidth = 2;
-ctx2.strokeStyle = 'blue';
-ctx2.moveTo(400, 0); //mova para determinada posição(sem tocar na tela) é como se fosse uma mira
-ctx2.lineTo(0, 400); // mova até a posição que definimos(tocando na tela)
-ctx2.stroke();//stroke mostra para o usuario o que fizemos
-ctx2.closePath();
+// Ordem de precedencia importa, se eu quiser que a linha fique acima do retangulo
+// tem que ser codificado primeiro
 
-
-// retângulos
-ctx2.beginPath();
-ctx2.lineWidth = 2;
-ctx2.fillStyle = 'yellow';
-ctx2.fillRect(0,350,50,50);
-ctx2.closePath();
 // retângulos
 ctx2.beginPath();
 ctx2.lineWidth = 2;
 ctx2.fillStyle = 'green';
 ctx2.fillRect(350,350,50,50);
+ctx2.closePath();
+
+// linhas
+ctx2.beginPath();
+ctx2.lineWidth = 2;
+ctx2.strokeStyle = 'red';
+ctx2.moveTo(0,0);
+ctx2.lineTo(400,400);
+ctx2.stroke();
 ctx2.closePath();
 
 //linhas azul
@@ -102,6 +113,8 @@ ctx2.closePath();
 
 
 
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
 // retângulos
 ctx.beginPath();
 ctx.lineWidth = 2;
@@ -157,3 +170,4 @@ ctx.textAlign = "center";
 ctx.fillText("Olá",205,350);
 ctx.strokeText("Olá",200,350)
 ctx.closePath();
+
